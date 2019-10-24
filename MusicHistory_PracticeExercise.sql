@@ -13,8 +13,7 @@
 --INSERT INTO Song(Title, AlbumId, ArtistId, ReleaseDate, SongLength, GenreId) VALUES ('Truth Hurts', 24, 29, 2019, 3, 6)
 --INSERT INTO Song(Title, AlbumId, ArtistId, ReleaseDate, SongLength, GenreId) VALUES ('Juice', 24, 29, 2019, 3, 6)
 
--- 5. Write a SELECT query that provides the song titles, album title, and artist name for all of the data you just entered in. 
--- Use the LEFT JOIN keyword sequence to connect the tables, and the WHERE keyword to filter the results to the album and artist you added.
+-- 5. Write a SELECT query that provides the song titles, album title, and artist name for all of the data you just entered in. Use the LEFT JOIN keyword sequence to connect the tables, and the WHERE keyword to filter the results to the album and artist you added.
 --SELECT s.Title, 
 --	   al.Title,
 --	   ar.ArtistName
@@ -23,16 +22,14 @@
 --	LEFT JOIN Artist ar on s.ArtistId = ar.Id
 --WHERE ArtistName = 'Lizzo' and al.Title = 'Cuz I Love You'
 
--- 6. Write a SELECT statement to display how many songs exist for each album. You'll need to use the COUNT() function and the 
- -- GROUP BY keyword sequence.
+-- 6. Write a SELECT statement to display how many songs exist for each album. You'll need to use the COUNT() function and the GROUP BY keyword sequence.
 --SELECT COUNT(s.Title) NumberOfSongs,
 --       a.Title
 --FROM Song s
 --	LEFT JOIN Album a on s.AlbumId = a.Id
 --GROUP BY a.Title
 
--- 7. Write a SELECT statement to display how many songs exist for each artist. You'll need to use the COUNT() function and 
--- the GROUP BY keyword sequence.
+-- 7. Write a SELECT statement to display how many songs exist for each artist. You'll need to use the COUNT() function and the GROUP BY keyword sequence.
 --SELECT COUNT(s.Title) NumberOfSongs,
 --       a.ArtistName
 --FROM Song s
